@@ -1,0 +1,201 @@
+body{
+    background-color: rgb(123, 152, 153);
+}
+.top-right-buttons{
+    display: block;
+    float: right;
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    font-size: 15px;
+}
+.welcome-buttons{
+    margin-left: 10px;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    background-color: rgb(240, 243, 245);
+    box-shadow: 3px 3px black;
+}
+.welcome-page{
+    display: block;
+    width: 30%;
+    height: 300px;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 5%;
+    padding-top: 5%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+.sign-up-form{
+    display: none;
+    width: 30%;
+    height: auto;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 2%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+.button-wrapper{
+    width: 100%;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+}
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    }
+form input{
+    width: 70%;
+    height: 35px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px black;
+}    
+form button{
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    background-color: rgb(240, 243, 245);
+    box-shadow: 3px 3px black;
+}
+.log-in-form{
+    display: none;
+    width: 30%;
+    height: auto;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 2%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+.dashboard{
+    display: none;
+    width: 30%;
+    height: auto;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+}
+#sign-up-mistake{
+    color: red;
+}
+#log-in-mistake{
+    color: red;
+}
+.to-do-list-form{
+    display: none;
+    width: 30%;
+    height: auto;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align: center;
+    margin-top: 2%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;   
+}
+.list-name{
+    margin: 15px 15px;
+    font-size: 25px;
+    color: rgb(35, 84, 219);
+    box-sizing: border-box;
+}
+.list-name:hover{
+    background-color: rgb(231, 227, 227);
+}
+.task-board{
+    display: none;
+    width: 30%;
+    height: auto;
+    border: black 1px solid;
+    margin-left: 35%;
+    text-align:start;
+    margin-top: 2%;
+    padding: 3%;
+    box-sizing: border-box;
+    background-color: rgb(240, 239, 241);
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+    color: blue;   
+    font-size: 25px;
+}
+#new-task-input{ 
+    height: 44px;
+    width: 80%;
+    line-height: 30px;
+    font-size: 20px;
+    border: none;
+    float: left;
+}
+#new-task-submit{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  background: rgba(142, 184, 231, 0.925);
+  color: white;
+  border: none;
+  font-weight: bold;
+  margin-left: 10px;
+}
+#new-task-adding-mistake{
+    color: red;
+}
+.task-board form{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+#list-name{
+    color: rgb(38, 99, 231);
+}
+.created-task-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.created-task-div input[type = checkbox]{
+    margin-top: 5px;
+    width: 15px;
+    height: 15px;
+}
+.created-task-div button{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: rgb(196, 212, 212);
+    margin-right: 2%;
+}
+input:checked+p{
+    text-decoration: line-through;
+}

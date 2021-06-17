@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./to-do-list.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="button-wrapper">
+        <button onclick="settingButton()" class="top-right-buttons">Settings</button>
+        <button onclick="signOut()" class="top-right-buttons">Sign out</button>
+        <button onclick="createToDo()" class="top-right-buttons">New To-Do</button>  
+    </div>
+        
+        <div class="welcome-page">
+            <h1>To Do List</h1>
+            <p>Welcome To To-Do-List application!!!</p>
+            <button onclick="goToSignUpForm()" class="welcome-buttons">Sign Up</button>
+            <button onclick="goToLogInForm()" class="welcome-buttons">Log In</button>
+        </div>
+        <div class="sign-up-form">
+            <h1>Sign Up</h1>
+            <p id='sign-up-mistake'></p>
+            <form onsubmit="signUp(event)">
+                <input class="signUpName" type="text" name ='name' placeholder="Enter your name Please">
+                <input class="signUpLasname" type="text" name="lastname" placeholder="Enter your lastname Please">
+                <input class="signUpEmail" type="text" name="email" placeholder="Enter your email Please">
+                <input class="signUpPassword" type="password" name="password" placeholder="Enter your password Please">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="log-in-form">
+            <h1>Log In</h1>
+            <p id='log-in-mistake'></p>
+            <form onsubmit="login(event)">
+                <input type="text"  name="email" placeholder="Enter your email Please">
+                <input type="password" name="password" placeholder="Enter your password Please">
+                <button>Log In</button>
+            </form>
+        </div>
+        <div class="dashboard">
+            <h1>To Do List</h1>
+            <div id='listnames'></div>
+        </div>
+
+        <div class="to-do-list-form">
+            <h1>To-Do-List Form</h1>
+            <p id="hello"></p>
+            <form onsubmit="createNewList(event)">
+                <input type="text" autocomplete="off" name ='toDoListName' placeholder="Enter New List Name ">
+                <button type="submit">AddListName</button>
+            </form>
+        </div>
+        <div class="task-board" id='task-board'>
+            <h3 ondblclick="changeTaskName()" id="list-name"></h3>
+            <p>(Please, doubleclick on the List name to change the List Name)</p>
+            <p id='new-task-adding-mistake'></p>
+            <form onsubmit="addNewTask(event)">
+                <input id="new-task-input" autocomplete="off" type="text" name='taskName'>
+                <button id="new-task-submit"> + </button>
+            </form>
+            <div id="task-name-board"></div>
+            
+        </div>
+
+    </div>   
+
+    <script src="./to-do-list.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.12.0/js/md5.min.js"></script>
+
+</body>
+</html>
